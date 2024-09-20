@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Better, modern font */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Use Google Font Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Navbar styling with logo */
+.navbar {
+    background-color: #003300; /* Dark green */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+     font-weight: bold
+}
+
+/* Hover effect for the navbar links */
+.navbar a:hover {
+    color: white;
+    text-shadow: 0 0 10px #f77fcc; /* Glowing light green */
+    transition: all 0.3s ease;
+}
+
+/* Header section styling with text pulled in from the edges */
+.header {
+    position: relative;
+    background-image: url('/Users/user/Desktop/WEBSITES/HAUSMEDIA/1v1.png'); /* Replace with the correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 40px; /* Adds padding to pull text in from the edges */
+    z-index: 1;
+}
+
+/* Pseudo-element for background blur */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Inherit the background image */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%) blur(4px); /* Darken and blur the background */
+    z-index: -1; /* Keeps the blur behind the text */
+}
+
+/* Consistent font size for text based on background scale */
+.header h1 {
+    font-size: 40px; /* Adjusted for balance with the background */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+    font-size: 24px;
+    margin-top: 10px;
+    max-width: 800px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    line-height: 1.6; /* Improves readability */
+    padding: 0 20px; /* Additional padding for better text placement */
+    font-weight: bold; /* Makes the paragraph text bold */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #003300;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
