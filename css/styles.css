@@ -43,7 +43,7 @@ body {
 /* Header section styling with text pulled in from the edges */
 .header {
     position: relative;
-    background-image: url('/images/1v1.png'); /* Replace with the correct path */
+    background-image: url('images/1v1.png'); /* Replace with the correct path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
